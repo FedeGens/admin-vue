@@ -59,15 +59,15 @@ const fileUrl = computed(() => {
 <template>
 	<div class="chat gap-x-3" :class="[sender === 'bot' ? 'chat-start' : 'chat-end']">
 		<div class="chat-image text-lg">
-			{{ sender === 'bot' ? '😺' : '🙂' }}
+			{{ sender === 'bot' ? '👽' : '🙂' }}
 		</div>
 		<div class="chat-header">
-			{{ sender === 'bot' ? 'Cheshire Cat' : 'You' }}
+			{{ sender === 'bot' ? 'Allien' : 'You' }}
 			<time class="text-xs opacity-50">{{ timestamp }}</time>
 		</div>
 		<div class="chat-bubble flex min-h-fit w-fit flex-col break-words rounded-lg bg-base-100 p-2 text-neutral shadow-md md:p-3">
 			<div v-if="text" class="text-ellipsis" v-html="renderedText" />
-			<p v-else class="text-ellipsis font-medium italic opacity-75">Cheshire Cat is thinking...</p>
+			<p v-else class="text-ellipsis font-medium italic opacity-75">Allien is thinking...</p>
 			<div v-if="isLengthy" class="flex justify-end font-bold">
 				<a v-if="showReadMore" @click="showReadMore = false">Hide content</a>
 				<a v-else @click="showReadMore = true">Read more</a>

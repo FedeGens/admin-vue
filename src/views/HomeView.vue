@@ -167,9 +167,9 @@ const regenerateResponse = (msgId: string) => {
 
 const generatePlaceholder = (isLoading: boolean, isRecording: boolean, error?: string) => {
 	if (error) return 'Well, well, well, looks like something has gone amiss'
-	if (isLoading) return 'The enigmatic Cheshire cat is pondering...'
-	if (isRecording) return 'The curious Cheshire cat is all ears...'
-	return 'Ask the Cheshire Cat...'
+	if (isLoading) return 'Allien is pondering...'
+	if (isRecording) return 'Allien cat is all ears...'
+	return 'Ask to Allien...'
 }
 
 const wipeHistory = async () => {
@@ -220,10 +220,10 @@ const scrollToBottom = () => {
 				{{ messagesState.error }}
 			</p>
 			<div v-else-if="!messagesState.error && messagesState.loading && !messagesState.generating" class="mb-2 ml-2 flex items-center gap-2">
-				<span class="text-lg">😺</span>
+				<span class="text-lg">👽</span>
 				<p class="flex items-center gap-2">
 					<span class="loading loading-dots loading-xs shrink-0" />
-					Cheshire Cat is thinking...
+					Allien is thinking...
 				</p>
 			</div>
 		</div>
